@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deywid Souza - Portfólio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Chart.js (opcional; deixe se for usar gráficos) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CSS customizado -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="bg-slate-900">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md z-50 shadow-lg border-b border-slate-700">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold text-white">Deywid Souza</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-slate-300 hover:text-blue-400 transition-colors">Início</a>
+          <a href="#about" class="text-slate-300 hover:text-blue-400 transition-colors">Sobre</a>
+          <a href="#projects" class="text-slate-300 hover:text-blue-400 transition-colors">Projetos</a>
+          <a href="#skills" class="text-slate-300 hover:text-blue-400 transition-colors">Habilidades</a>
+          <a href="#contact" class="text-slate-300 hover:text-blue-400 transition-colors">Contato</a>
+        </div>
+        <button id="mobile-menu" class="md:hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="gradient-bg min-h-screen flex items-center justify-center text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="mb-8">
+        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-white/20 overflow-hidden border-4 border-white/30 shadow-2xl">
+          <img src="https://lh3.googleusercontent.com/d/18PV6c8PUgSnux9QNwUI_DRtQCbTzDwOc"
+               alt="Deywid Souza"
+               class="w-full h-full object-cover object-center filter brightness-110 contrast-105"
+               onerror="this.parentElement.innerHTML='<div class=\'w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold shadow-inner\'>DS</div>'">
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-4">Deywid Souza</h1>
+        <div class="text-xl md:text-2xl mb-8">
+          <span id="typing-text" class="typing-animation">Desenvolvedor Back-end</span>
+        </div>
+        <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          Desenvolvendo soluções back-end escaláveis, automações inteligentes e agentes de IA para otimizar processos
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#projects" class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors">
+            Ver Projetos
+          </a>
+          <a href="#contact" class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-colors">
+            Entre em Contato
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
+        <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="fade-in">
+          <div class="bg-gradient-to-br from-slate-700 to-slate-600 p-8 rounded-2xl border border-slate-600">
+            <div class="text-8xl text-center mb-4">👨‍💻</div>
+            <div class="text-center">
+              <h3 class="text-2xl font-bold text-white mb-2">Desenvolvedor Back-end</h3>
+              <p class="text-slate-300">Soluções escaláveis e inteligentes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <h3 class="text-2xl font-bold text-white mb-6">Minha Jornada</h3>
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            Desenvolvedor de Software dedicado, com experiência em projetos voltados para back-end, automações, análise de dados, agentes de IA e soluções altamente escaláveis.
+          </p>
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            Minha sólida experiência como suporte técnico foi essencial para desenvolver uma visão mais clara sobre as dores das equipes, especialmente em tarefas repetitivas, maçantes e de grande volume. Essa perspectiva tem sido crucial para a criação de soluções otimizadas com foco em automação.
+          </p>
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            Tenho como propósito construir soluções que economizem tempo em tarefas mecânicas, ao mesmo tempo, em que potencializam atividades que exigem atenção, análise e raciocínio.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="text-center p-4 bg-slate-700 rounded-lg border border-slate-600">
+              <div class="text-2xl font-bold text-blue-400">5+</div>
+              <div class="text-sm text-slate-300">Automações Criadas</div>
+            </div>
+            <div class="text-center p-4 bg-slate-700 rounded-lg border border-slate-600">
+              <div class="text-2xl font-bold text-blue-400">5+</div>
+              <div class="text-sm text-slate-300">APIs Desenvolvidas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-white mb-4">Meus Projetos</h2>
+        <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+        <p class="text-slate-300 max-w-2xl mx-auto">
+          Explore alguns dos meus projetos mais impactantes em desenvolvimento back-end, automação e inteligência artificial
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
+          <div class="p-6">
+            <div class="text-4xl mb-4">🚀</div>
+            <h3 class="text-xl font-bold text-white mb-3">API de Automação RPA</h3>
+            <p class="text-slate-300 mb-4">
+              API robusta para automação de processos repetitivos, reduzindo 80% do tempo em tarefas manuais com integração Selenium.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-900 text-blue-300 text-sm rounded-full">Python</span>
+              <span class="px-3 py-1 bg-green-900 text-green-300 text-sm rounded-full">FastAPI</span>
+              <span class="px-3 py-1 bg-purple-900 text-purple-300 text-sm rounded-full">Selenium</span>
+            </div>
+            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              Ver Detalhes
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
+          <div class="p-6">
+            <div class="text-4xl mb-4">🤖</div>
+            <h3 class="text-xl font-bold text-white mb-3">Agente de IA Inteligente</h3>
+            <p class="text-slate-300 mb-4">
+              Sistema de agentes de IA usando CrewAI e OpenAI para automatizar análises complexas e tomada de decisões.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-orange-900 text-orange-300 text-sm rounded-full">Python</span>
+              <span class="px-3 py-1 bg-red-900 text-red-300 text-sm rounded-full">CrewAI</span>
+              <span class="px-3 py-1 bg-yellow-900 text-yellow-300 text-sm rounded-full">OpenAI</span>
+            </div>
+            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              Ver Detalhes
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
+          <div class="p-6">
+            <div class="text-4xl mb-4">📊</div>
+            <h3 class="text-xl font-bold text-white mb-3">Pipeline ETL Escalável</h3>
+            <p class="text-slate-300 mb-4">
+              Sistema ETL robusto para processamento de grandes volumes de dados com análise em tempo real usando Pandas e NumPy.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-indigo-900 text-indigo-300 text-sm rounded-full">Python</span>
+              <span class="px-3 py-1 bg-pink-900 text-pink-300 text-sm rounded-full">Pandas</span>
+              <span class="px-3 py-1 bg-teal-900 text-teal-300 text-sm rounded-full">NumPy</span>
+            </div>
+            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              Ver Detalhes
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
+          <div class="p-6">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="text-xl font-bold text-white mb-3">Sistema de Machine Learning</h3>
+            <p class="text-slate-300 mb-4">
+              Implementação de modelos ML com Scikit-Learn e JAX para predições em tempo real com alta performance.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-cyan-900 text-cyan-300 text-sm rounded-full">Python</span>
+              <span class="px-3 py-1 bg-lime-900 text-lime-300 text-sm rounded-full">Scikit-Learn</span>
+              <span class="px-3 py-1 bg-amber-900 text-amber-300 text-sm rounded-full">JAX</span>
+            </div>
+            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              Ver Detalhes
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
+          <div class="p-6">
+            <div class="text-4xl mb-4">🔗</div>
+            <h3 class="text-xl font-bold text-white mb-3">Integração Google APIs</h3>
+            <p class="text-slate-300 mb-4">
+              Sistema completo de integração com Google ADK para automação de campanhas e análise de performance.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-violet-900 text-violet-300 text-sm rounded-full">Python</span>
+              <span class="px-3 py-1 bg-rose-900 text-rose-300 text-sm rounded-full">Google ADK</span>
+              <span class="px-3 py-1 bg-emerald-900 text-emerald-300 text-sm rounded-full">FastAPI</span>
+            </div>
+            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              Ver Detalhes
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
+          <div class="p-6">
+            <div class="text-4xl mb-4">🧠</div>
+            <h3 class="text-xl font-bold text-white mb-3">Sistema LLM Personalizado</h3>
+            <p class="text-slate-300 mb-4">
+              Desenvolvimento de sistema baseado em LLMs com Gemini API para processamento inteligente de linguagem natural.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-900 text-blue-300 text-sm rounded-full">Python</span>
+              <span class="px-3 py-1 bg-orange-900 text-orange-300 text-sm rounded-full">Gemini API</span>
+              <span class="px-3 py-1 bg-green-900 text-green-300 text-sm rounded-full">LLMs</span>
+            </div>
+            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              Ver Detalhes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-white mb-4">Habilidades</h2>
+        <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+        <p class="text-slate-300 max-w-2xl mx-auto">
+          Tecnologias e ferramentas que domino para desenvolver soluções back-end escaláveis e automações inteligentes
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="fade-in">
+          <h3 class="text-2xl font-bold text-white mb-8">Ferramentas Técnicas</h3>
+
+          <div class="space-y-4">
+            <!-- barras de skill (exatamente como estavam; o JS preenche a largura) -->
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">Python</span>
+                <span class="text-blue-400">95%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="95%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">FastAPI</span>
+                <span class="text-blue-400">90%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">Selenium</span>
+                <span class="text-blue-400">88%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="88%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">Pandas</span>
+                <span class="text-blue-400">92%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="92%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">Power BI</span>
+                <span class="text-blue-400">85%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="85%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">PostgreSQL</span>
+                <span class="text-blue-400">87%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="87%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">Django</span>
+                <span class="text-blue-400">83%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="83%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">Docker</span>
+                <span class="text-blue-400">80%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="80%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">Java</span>
+                <span class="text-blue-400">75%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="75%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">MongoDB</span>
+                <span class="text-blue-400">82%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="82%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-slate-300">MySQL</span>
+                <span class="text-blue-400">85%</span>
+              </div>
+              <div class="bg-slate-700 rounded-full h-3">
+                <div class="skill-bar bg-blue-500 h-3 rounded-full" style="width:0%" data-width="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <h3 class="text-2xl font-bold text-white mb-8">Especialidades</h3>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gradient-to-br from-slate-700 to-slate-600 border border-slate-600 p-6 rounded-xl text-center">
+              <div class="text-3xl mb-3">📊</div>
+              <h4 class="font-semibold text-white mb-2">Visualização</h4>
+              <p class="text-sm text-slate-300">Dashboards interativos</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-slate-700 to-slate-600 border border-slate-600 p-6 rounded-xl text-center">
+              <div class="text-3xl mb-3">🤖</div>
+              <h4 class="font-semibold text-white mb-2">Machine Learning</h4>
+              <p class="text-sm text-slate-300">Modelos preditivos</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-slate-700 to-slate-600 border border-slate-600 p-6 rounded-xl text-center">
+              <div class="text-3xl mb-3">⚙️</div>
+              <h4 class="font-semibold text-white mb-2">APIs RESTful</h4>
+              <p class="text-sm text-slate-300">Desenvolvimento robusto</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-slate-700 to-slate-600 border border-slate-600 p-6 rounded-xl text-center">
+              <div class="text-3xl mb-3">💼</div>
+              <h4 class="font-semibold text-white mb-2">Business Intelligence</h4>
+              <p class="text-sm text-slate-300">Insights estratégicos</p>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <h4 class="font-semibold text-white mb-4">Certificações</h4>
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <div class="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
+                <span class="text-slate-300">Python Developer Certified</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
+                <span class="text-slate-300">Docker Certified Associate</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
+                <span class="text-slate-300">PostgreSQL Professional</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- grid -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 gradient-bg text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold mb-4">Vamos Trabalhar Juntos?</h2>
+        <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
+        <p class="text-xl opacity-90 max-w-2xl mx-auto">
+          Estou sempre aberta a novos desafios e oportunidades. Entre em contato para discutir seu próximo projeto!
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <div class="fade-in">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="flex items-center p-6 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/15 transition-colors">
+              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-6">
+                <span class="text-2xl">📧</span>
+              </div>
+              <div>
+                <div class="font-semibold text-lg mb-1">Email</div>
+                <a href="mailto:deywid2005@gmail.com" class="text-blue-300 hover:text-blue-200 transition-colors">
+                  deywid2005@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-center p-6 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/15 transition-colors">
+              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-6">
+                <span class="text-2xl">💼</span>
+              </div>
+              <div>
+                <div class="font-semibold text-lg mb-1">LinkedIn</div>
+                <a href="https://www.linkedin.com/in/deywid-souza" target="_blank" class="text-blue-300 hover:text-blue-200 transition-colors">
+                  linkedin.com/in/deywid-souza
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-center p-6 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/15 transition-colors">
+              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-6">
+                <span class="text-2xl">🐙</span>
+              </div>
+              <div>
+                <div class="font-semibold text-lg mb-1">GitHub</div>
+                <a href="https://github.com/Deywid12" target="_blank" class="text-blue-300 hover:text-blue-200 transition-colors">
+                  github.com/Deywid12
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-center p-6 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/15 transition-colors">
+              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-6">
+                <span class="text-2xl">📱</span>
+              </div>
+              <div>
+                <div class="font-semibold text-lg mb-1">WhatsApp</div>
+                <a href="https://wa.me/5511998984437" target="_blank" class="text-blue-300 hover:text-blue-200 transition-colors">
+                  +55 (11) 998984437
+                </a>
+              </div>
+            </div>
+          </div> <!-- grid -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-white py-8 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <div class="mb-4">
+        <h3 class="text-2xl font-bold mb-2">Deywid Souza</h3>
+        <p class="text-slate-400">Desenvolvedor Back-end e Analista de Dados</p>
+      </div>
+
+      <div class="flex justify-center space-x-6 mb-6">
+        <a href="https://www.linkedin.com/in/deywid-souza" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors">
+          <span class="text-2xl">💼</span>
+        </a>
+        <a href="https://github.com/Deywid12" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors">
+          <span class="text-2xl">🐙</span>
+        </a>
+        <a href="mailto:deywid2005@gmail.com" class="text-slate-400 hover:text-blue-400 transition-colors">
+          <span class="text-2xl">📧</span>
+        </a>
+      </div>
+
+      <div class="border-t border-slate-800 pt-6">
+        <p class="text-slate-400">&copy; 2024 Deywid Souza. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS customizado -->
+  <script src="./script.js"></script>
+</body>
+</html>

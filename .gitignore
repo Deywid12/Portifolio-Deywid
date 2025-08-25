@@ -1,0 +1,13 @@
+# Node / dependências (se futuramente usar npm)
+node_modules/
+
+# Logs
+*.log
+
+# Arquivos temporários do SO/Editor
+.DS_Store
+Thumbs.db
+
+# Build temporário
+dist/
+build/
