@@ -28,6 +28,9 @@ O site conta com as seguintes seções:
 - **GitHub Pages** (deploy)
 
 ---
+## 📊 Linguagens Mais Usadas
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=deywid12&layout=compact&theme=radical)
 
 ## 📂 Estrutura de Arquivos
 ```bash
@@ -37,3 +40,5 @@ portfolio/
 │-- script.js    # Funcionalidades JS
 │-- LICENSE      # Licença do projeto
 │-- README.md    # Documentação
+
+
