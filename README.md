@@ -6,7 +6,7 @@ O objetivo é apresentar meus projetos, habilidades e formas de contato de manei
 ---
 
 ## 🚀 Acesse Online
-🔗 [Clique aqui para acessar meu portfólio](https://deywid12.github.io/portfolio/)  
+🔗 [Clique aqui para acessar meu portfólio](https://deywid12.github.io/Portifolio-Deywid/)  
 
 ---
 
