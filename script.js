@@ -74,13 +74,13 @@ mobileMenuBtn?.addEventListener('click', () => {
 });
 
 // Botões "Ver Detalhes" (placeholder)
-document.querySelectorAll('button').forEach(button => {
-  if (button.textContent.includes('Ver Detalhes')) {
-    button.addEventListener('click', () => {
-      alert('Em uma implementação real, aqui abriria os detalhes do projeto com mais informações, imagens e links para demonstrações.');
-    });
-  }
-});
+//document.querySelectorAll('button').forEach(button => {
+  //if (button.textContent.includes('Ver Detalhes')) {
+    //button.addEventListener('click', () => {
+      //alert('Em uma implementação real, aqui abriria os detalhes do projeto com mais informações, imagens e links para demonstrações.');
+    //});
+  //}
+//});
 
 // Destaque do item ativo no nav ao rolar
 window.addEventListener('scroll', () => {
