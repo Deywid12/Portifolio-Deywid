@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Animação de digitação
-const texts = ['Desenvolvedor', 'Back-end', 'Automações', 'Análise de Dados', 'IA'];
+const texts = ['Desenvolvedor', 'Full-Stack', 'Automações', 'Análise de Dados', 'IA'];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
