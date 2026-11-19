@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Deywid Souza · Desenvolvedor de software</title>
-  <meta name="description" content="Desenvolvedor de software. Automação e RPA, APIs e integrações em AWS e aplicações web em Angular e Node.js.">
-  <meta property="og:title" content="Deywid Souza · Desenvolvedor de software">
-  <meta property="og:description" content="Automação e RPA, APIs e integrações em AWS e aplicações web.">
+  <title>Deywid Souza · Desenvolvedor de Software</title>
+  <meta name="description" content="Desenvolvedor de software full stack, cloud AWS, RPA e dados. Angular, TypeScript, Node.js, Python e serverless na AWS.">
+  <meta property="og:title" content="Deywid Souza · Desenvolvedor de Software">
+  <meta property="og:description" content="Full stack, AWS serverless, RPA para Legal Ops e dados.">
   <meta property="og:image" content="https://deywid12.github.io/Portifolio-Deywid/img/deywid.png">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="profile">
   <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231c1a17'/%3E%3Ctext x='16' y='21.5' font-family='Georgia,serif' font-size='15' fill='%23f5f3ee' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E">
@@ -21,320 +21,328 @@
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="topbar">
-    <div class="wrap topbar__inner">
-      <a href="#topo" class="brand">Deywid Souza</a>
-      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
-      <nav id="menu" class="menu" aria-label="Seções">
-        <a href="#servicos">Serviços</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#formacao">Formação</a>
-        <a href="#contato" class="menu__cta">Contato</a>
-      </nav>
-    </div>
-  </header>
+  <div class="layout">
 
-  <main id="conteudo">
+    <!-- Perfil -->
+    <aside class="profile">
+      <div class="profile__inner">
+        <img class="profile__photo" src="img/deywid.png" alt="Foto de Deywid Souza" width="295" height="364">
 
-    <!-- Abertura -->
-    <section id="topo" class="hero wrap">
-      <div class="hero__text">
-        <p class="eyebrow">Desenvolvedor de software · Python, TypeScript, AWS</p>
-        <h1>Eu transformo trabalho manual e repetitivo em <em>software que roda sozinho.</em></h1>
-        <p class="lead">
-          Hoje escrevo robôs de RPA para operações jurídicas na Autodev e desenvolvo, na Radio Memory,
-          o sistema de gestão para clínicas de radiologia odontológica, incluindo o backend do módulo
-          de nota fiscal em AWS Lambda.
-        </p>
-        <div class="actions">
-          <a class="btn btn--solid" href="#contato">Falar comigo</a>
-          <a class="btn" href="#experiencia">Ver experiência</a>
-        </div>
-      </div>
-      <figure class="hero__photo">
-        <img src="img/deywid.png" alt="Deywid Souza trabalhando no notebook" width="295" height="364">
-      </figure>
-    </section>
+        <h1 class="profile__name">Deywid Souza</h1>
 
-    <!-- Serviços -->
-    <section id="servicos" class="section wrap">
-      <header class="section__head">
-        <p class="eyebrow">O que eu faço</p>
-        <h2>Três tipos de problema que eu resolvo</h2>
-      </header>
+        <ul class="roles" aria-label="Atuação">
+          <li>Desenvolvedor de Software</li>
+          <li>Desenvolvedor Full Stack</li>
+          <li>Desenvolvedor RPA</li>
+          <li>Cloud AWS</li>
+          <li>Análise de Dados</li>
+        </ul>
 
-      <ol class="services">
-        <li class="service">
-          <span class="service__num">01</span>
-          <h3>Automação e RPA</h3>
-          <p>
-            Se alguém passa o dia copiando dados de um sistema para outro, preenchendo o mesmo
-            formulário ou baixando relatórios, isso pode virar um robô. Eu mapeio o processo com
-            quem faz o trabalho, automatizo e deixo rodando com agendamento, log e relatório.
-          </p>
-          <p class="tools">Python · Selenium · Playwright · Pandas · ETL</p>
-        </li>
-        <li class="service">
-          <span class="service__num">02</span>
-          <h3>APIs e integrações</h3>
-          <p>
-            Faço sistemas que não conversam passarem a conversar: APIs REST, webhooks, filas de
-            mensagem e funções serverless. Quando um serviço externo é lento, o pedido vai para
-            segundo plano e o usuário não fica esperando.
-          </p>
-          <p class="tools">Node.js · TypeScript · FastAPI · AWS Lambda · API Gateway · RabbitMQ</p>
-        </li>
-        <li class="service">
-          <span class="service__num">03</span>
-          <h3>Aplicações web</h3>
-          <p>
-            Telas e módulos de sistemas internos, do front ao banco: formulários, listagens,
-            filtros e regras de negócio, ligados a um backend próprio.
-          </p>
-          <p class="tools">Angular · TypeScript · PostgreSQL · MySQL · MongoDB</p>
-        </li>
-      </ol>
-    </section>
+        <p class="profile__place">Contagem · Minas Gerais</p>
 
-    <!-- Como trabalho -->
-    <section class="section wrap">
-      <header class="section__head">
-        <p class="eyebrow">Como eu trabalho</p>
-        <h2>O que vem junto com o código</h2>
-      </header>
-      <dl class="principles">
-        <div>
-          <dt>Testo antes de gravar</dt>
-          <dd>Robôs e integrações rodam primeiro em simulação. Só escrevem em produção depois que o resultado foi conferido.</dd>
-        </div>
-        <div>
-          <dt>Conto com o erro</dt>
-          <dd>Retentativa, timeout e registro da falha fazem parte da entrega. Quando algo quebra, dá para saber onde e por quê.</dd>
-        </div>
-        <div>
-          <dt>Escrevo para quem vem depois</dt>
-          <dd>Documentação em linguagem simples, dizendo o que o sistema faz e o que ainda não faz.</dd>
-        </div>
-        <div>
-          <dt>Converso com quem usa</dt>
-          <dd>Vim do suporte técnico. Antes de escrever código, procuro entender a rotina de quem vai usar.</dd>
-        </div>
-      </dl>
-    </section>
+        <nav class="toc" aria-label="Seções">
+          <a href="#sobre">Sobre</a>
+          <a href="#atuacao">Atuação</a>
+          <a href="#aws">AWS na prática</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#formacao">Formação e eventos</a>
+          <a href="#contato">Contato</a>
+        </nav>
 
-    <!-- Experiência -->
-    <section id="experiencia" class="section wrap">
-      <header class="section__head">
-        <p class="eyebrow">Experiência</p>
-        <h2>Onde trabalhei e o que fiz</h2>
-      </header>
-
-      <ol class="timeline">
-        <li class="job">
-          <div class="job__meta">
-            <span class="job__date">mar 2026 – atual</span>
-            <span class="job__type">PJ</span>
-          </div>
-          <div class="job__body">
-            <h3>Desenvolvedor Python / RPA <span class="at">Autodev</span></h3>
-            <p>
-              Desenvolvo e mantenho robôs que operam sistemas jurídicos no lugar de pessoas:
-              lançam andamentos, anexam documentos, dão baixa em tarefas e enviam relatórios
-              de execução.
-            </p>
-            <ul>
-              <li>Robôs em produção com agendamento, filas e retentativas.</li>
-              <li>Modo de simulação com trava de gravação: o robô percorre o fluxo inteiro sem salvar nada até ser liberado.</li>
-              <li>Investigação de falhas em produção: captura de evidências em timeouts, circuit breaker e ajustes quando o sistema de terceiros muda a tela.</li>
-              <li>Integração por APIs, tratamento de dados e ETL.</li>
-            </ul>
-            <p class="tools">Python · Selenium · Playwright · FastAPI · MongoDB · RabbitMQ · Docker</p>
-          </div>
-        </li>
-
-        <li class="job">
-          <div class="job__meta">
-            <span class="job__date">jan 2026 – atual</span>
-          </div>
-          <div class="job__body">
-            <h3>Desenvolvedor Júnior <span class="at">Radio Memory</span></h3>
-            <p>
-              Desenvolvimento full stack da plataforma usada por clínicas de radiologia odontológica.
-            </p>
-            <ul>
-              <li>Backend do módulo de nota fiscal (NFS-e Nacional) em AWS Lambda e API Gateway. A emissão é assíncrona: o módulo aceita o pedido, processa em segundo plano e avisa por webhook se a nota foi autorizada ou rejeitada.</li>
-              <li>Inclusão dos campos da reforma tributária no envio da NFS-e.</li>
-              <li>Telas e módulos em Angular e TypeScript, APIs em Node.js, regras de negócio e correções em produção.</li>
-            </ul>
-            <p class="tools">TypeScript · Angular · Node.js · AWS Lambda · API Gateway · SQL</p>
-          </div>
-        </li>
-
-        <li class="job">
-          <div class="job__meta">
-            <span class="job__date">abr 2025 – dez 2025</span>
-          </div>
-          <div class="job__body">
-            <h3>Analista de Suporte Técnico <span class="at">Radio Memory</span></h3>
-            <p>
-              Implantação e suporte dos sistemas nas clínicas, integração com softwares de aquisição
-              de imagens radiológicas e manutenção de bancos Access e SQL (IBExpert).
-            </p>
-            <ul>
-              <li>Criei o BaseBot, um assistente que responde à equipe de suporte usando a base interna de erros e soluções.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="job">
-          <div class="job__meta">
-            <span class="job__date">ago 2024 – jan 2025</span>
-          </div>
-          <div class="job__body">
-            <h3>Analista de Suporte de TI <span class="at">QA – IT Answer</span></h3>
-            <p>
-              Suporte de TI em hospitais: sistema de gestão hospitalar MV, atendimento a usuários,
-              incidentes de hardware e software, domínio, equipamentos e painéis de BI.
-            </p>
-          </div>
-        </li>
-      </ol>
-
-      <p class="note">
-        Comecei no suporte e foi lá que vi quanto tempo as equipes perdem com tarefas repetitivas.
-        É esse tipo de trabalho que eu procuro automatizar hoje.
-      </p>
-    </section>
-
-    <!-- Projetos -->
-    <section id="projetos" class="section wrap">
-      <header class="section__head">
-        <p class="eyebrow">Projetos públicos</p>
-        <h2>Código que dá para abrir</h2>
-        <p class="section__sub">
-          A maior parte do meu trabalho atual está em repositórios privados das empresas e aparece
-          descrita acima. Estes estão no meu GitHub.
-        </p>
-      </header>
-
-      <ul class="projects">
-        <li>
-          <a class="project" href="https://github.com/Deywid12/Api-ChatGPT-Basebot" target="_blank" rel="noopener">
-            <h3>BaseBot</h3>
-            <p>API em Flask com RAG que responde dúvidas do suporte usando só a base interna de erros, manutenções e integrações, organizada em causa, tratativa e observações.</p>
-            <span class="tools">Python · Flask · OpenAI · RAG</span>
-            <span class="project__go" aria-hidden="true">↗</span>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="https://github.com/Deywid12/SuporteBot-PHP" target="_blank" rel="noopener">
-            <h3>SuporteBot</h3>
-            <p>Versão em PHP do assistente de suporte, com endpoint de chat e a base de conhecimento estruturada para o GPT.</p>
-            <span class="tools">PHP · OpenAI · API</span>
-            <span class="project__go" aria-hidden="true">↗</span>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="https://github.com/Deywid12/BLOG-RADIO-MEMORY" target="_blank" rel="noopener">
-            <h3>Blog de notícias</h3>
-            <p>Aplicação Angular que consome uma API de notícias: filtro por categoria, busca, fixados primeiro, leitura em modal e HTML sanitizado.</p>
-            <span class="tools">Angular · TypeScript</span>
-            <span class="project__go" aria-hidden="true">↗</span>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="https://github.com/Deywid12/Sistema-de-Mensageria-RabbitMQ" target="_blank" rel="noopener">
-            <h3>Mensageria com RabbitMQ</h3>
-            <p>Publisher e consumer com a biblioteca Pika: um envia mensagens para a fila, o outro escuta e processa em tempo real.</p>
-            <span class="tools">Python · Pika · RabbitMQ</span>
-            <span class="project__go" aria-hidden="true">↗</span>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="https://github.com/Deywid12/Automacao-Formulario-Selenium" target="_blank" rel="noopener">
-            <h3>Automação de formulário</h3>
-            <p>Meu primeiro estudo de automação web: abre o Chrome, acessa o formulário, preenche nome, e-mail e telefone e envia.</p>
-            <span class="tools">Python · Selenium</span>
-            <span class="project__go" aria-hidden="true">↗</span>
-          </a>
-        </li>
-        <li>
-          <a class="project" href="https://github.com/Deywid12/infra-signet-docker" target="_blank" rel="noopener">
-            <h3>Nó Bitcoin em Signet</h3>
-            <p>Ambiente feito em workshop para rodar um nó Bitcoin na rede Signet, com miner opcional, usando Docker Compose e Nix.</p>
-            <span class="tools">Docker · Docker Compose · Nix</span>
-            <span class="project__go" aria-hidden="true">↗</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Formação -->
-    <section id="formacao" class="section wrap">
-      <header class="section__head">
-        <p class="eyebrow">Formação e comunidade</p>
-        <h2>Estudo e eventos</h2>
-      </header>
-
-      <div class="edu">
-        <div class="edu__col">
-          <h3 class="minor">Formação</h3>
-          <ul class="plain">
-            <li><strong>Ciência da Computação</strong><span>Centro Universitário UNA · 2023 – 2027</span></li>
-            <li><strong>Técnico em Desenvolvimento de Sistemas</strong><span>Proz Educação · 2022 – 2024</span></li>
-          </ul>
-          <h3 class="minor">Idiomas</h3>
-          <ul class="plain">
-            <li><strong>Português</strong><span>nativo</span></li>
-            <li><strong>Inglês</strong><span>intermediário</span></li>
-          </ul>
-        </div>
-
-        <div class="edu__col">
-          <h3 class="minor">Eventos em 2025</h3>
-          <ul class="events">
-            <li>
-              <a href="https://www.linkedin.com/posts/deywid-souza_cybersecurity-hackingnawebday-infosec-activity-7337656417987846145-J8zy" target="_blank" rel="noopener">Hacking na Web Day</a>
-              <p>Segurança da informação e hacking ético: vulnerabilidades, phishing, engenharia social e hardware hacking.</p>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/posts/deywid-souza_gdg-webai-ai-activity-7340149927685029889-YepS" target="_blank" rel="noopener">Google I/O Extended BH · PUC Minas</a>
-              <p>IA no ciclo de desenvolvimento web, MCP e A2A, e agentes com Keras e JAX.</p>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/posts/deywid-souza_blockchain-web3-solidity-activity-7347435815884488704-0HmY" target="_blank" rel="noopener">Workshop Web3 · PUC Minas</a>
-              <p>Tokens ERC-20 e ERC-721 com OpenZeppelin, contratos em Solidity no Remix e deploy em testnet.</p>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/posts/deywid-souza_tech-gdg-gdgbelohorizonte-activity-7363373361659359232-qf_3" target="_blank" rel="noopener">GDG BH Meet #01 · Localiza&amp;Co</a>
-              <p>Concorrência em Node.js (Event Loop e Worker Threads) e Saga Pattern em microsserviços.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contato" class="contact">
-      <div class="wrap">
-        <p class="eyebrow">Contato</p>
-        <h2>Tem um processo que dá para automatizar ou um sistema para integrar?</h2>
-        <p class="lead">Me conte como ele funciona hoje. Respondo por e-mail ou WhatsApp.</p>
-        <a class="contact__mail" href="mailto:deywid2005@gmail.com">deywid2005@gmail.com</a>
-        <ul class="contact__links">
-          <li><a href="https://wa.me/5531998984437" target="_blank" rel="noopener"><span>WhatsApp</span>(31) 99898-4437</a></li>
-          <li><a href="https://www.linkedin.com/in/deywid-souza" target="_blank" rel="noopener"><span>LinkedIn</span>in/deywid-souza</a></li>
-          <li><a href="https://github.com/Deywid12" target="_blank" rel="noopener"><span>GitHub</span>Deywid12</a></li>
+        <ul class="links">
+          <li><a href="https://github.com/Deywid12" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/deywid-souza" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            LinkedIn</a></li>
+          <li><a href="mailto:deywid2005@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2V5Zm2 2v.4l8 5.2 8-5.2V7H4Zm16 2.8-8 5.2-8-5.2V17h16V9.8Z"/></svg>
+            E-mail</a></li>
         </ul>
       </div>
-    </section>
-  </main>
+    </aside>
 
-  <footer class="footer wrap">
-    <span>© <span id="ano">2026</span> Deywid Luiz Souza Tavares</span>
-    <a href="#topo">Voltar ao topo ↑</a>
-  </footer>
+    <main id="conteudo" class="content">
+
+      <!-- Sobre -->
+      <section id="sobre" class="block">
+        <p class="kicker">Sobre</p>
+        <p class="intro">
+          Desenvolvo software na interseção entre <em>aplicações, cloud e automação</em>:
+          entender um processo, achar onde ele trava e transformar isso em sistema que roda
+          em produção e aguenta escala.
+        </p>
+        <div class="prose">
+          <p>
+            No desenvolvimento, trabalho principalmente com Angular, TypeScript, Node.js e Python,
+            construindo aplicações web, serviços e integrações por APIs REST e webhooks. Na AWS,
+            construo backends serverless e orientados a eventos com Lambda, API Gateway, SQS,
+            DynamoDB, S3 e EC2.
+          </p>
+          <p>
+            Também desenvolvo automações RPA para Legal Tech e Legal Ops, usadas por escritórios
+            de advocacia e departamentos jurídicos de grandes empresas, e trabalho com ETL,
+            bancos relacionais e não relacionais e APIs de modelos de IA dentro de aplicações
+            e automações.
+          </p>
+          <p>
+            Comecei no suporte técnico, primeiro em hospitais e depois em clínicas de radiologia.
+            Foi ali que aprendi a olhar para o problema de quem usa o sistema antes de escrever código.
+          </p>
+        </div>
+      </section>
+
+      <!-- Atuação -->
+      <section id="atuacao" class="block">
+        <p class="kicker">Atuação</p>
+        <h2>Onde eu trabalho no dia a dia</h2>
+
+        <div class="areas">
+          <article class="area">
+            <h3>Desenvolvimento full stack</h3>
+            <p>
+              Componentes, módulos e funcionalidades em Angular e TypeScript; APIs e serviços em
+              Node.js; consultas, modelagem e otimização em MySQL e MariaDB. Também mantenho
+              extensões de navegador integradas a plataformas de atendimento.
+            </p>
+            <p class="tools">Angular · TypeScript · JavaScript · Node.js · Express · MySQL · MariaDB</p>
+          </article>
+
+          <article class="area">
+            <h3>Cloud AWS</h3>
+            <p>
+              Arquitetura serverless e orientada a eventos: uma Lambda por responsabilidade, filas
+              para tirar trabalho lento do caminho do usuário, webhooks para receber respostas de
+              serviços externos e reprocessamento quando algo falha.
+            </p>
+            <p class="tools">Lambda · API Gateway · SQS · DynamoDB · S3 · EC2</p>
+          </article>
+
+          <article class="area">
+            <h3>Automação e RPA</h3>
+            <p>
+              Robôs que operam sistemas e portais jurídicos: lançam andamentos, anexam documentos,
+              dão baixa em tarefas e geram relatórios. Execução e orquestração em containers, com
+              filas, agendamento e armazenamento em nuvem.
+            </p>
+            <p class="tools">Python · Selenium · Playwright · Temporal · RabbitMQ · Docker · Azure Blob</p>
+          </article>
+
+          <article class="area">
+            <h3>Dados e IA</h3>
+            <p>
+              ETL e processamento de dados para conectar sistemas diferentes e estruturar a informação
+              que as automações usam. Integração de APIs de modelos de IA, incluindo um assistente
+              com RAG para a equipe de suporte.
+            </p>
+            <p class="tools">Pandas · SQL · PostgreSQL · MongoDB · Redis · OpenAI · RAG</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- AWS na prática -->
+      <section id="aws" class="block">
+        <p class="kicker">AWS na prática</p>
+        <h2>Módulo fiscal serverless</h2>
+        <p class="prose">
+          Na Radio Memory, construí o backend do módulo que emite notas fiscais de serviço
+          (NFS-e Nacional) para o sistema de gestão das clínicas. A emissão depende do fisco e de um
+          provedor externo, que podem demorar. Por isso o fluxo é assíncrono: a tela recebe a
+          confirmação do pedido na hora e o resultado chega depois.
+        </p>
+
+        <ol class="flow">
+          <li>
+            <span class="flow__svc">API Gateway + Lambda</span>
+            <strong>Recebe o pedido de emissão</strong>
+            <span>Valida, registra a nota e responde na hora que o pedido foi aceito.</span>
+          </li>
+          <li>
+            <span class="flow__svc">SQS</span>
+            <strong>Fila de emissão</strong>
+            <span>O trabalho pesado sai do caminho da tela.</span>
+          </li>
+          <li>
+            <span class="flow__svc">Lambda worker</span>
+            <strong>Fala com o provedor fiscal</strong>
+            <span>Erro temporário volta para a fila e é reprocessado; erro definitivo fica registrado na nota.</span>
+          </li>
+          <li>
+            <span class="flow__svc">Webhook</span>
+            <strong>Recebe o resultado</strong>
+            <span>O provedor avisa se a nota foi autorizada ou rejeitada.</span>
+          </li>
+          <li>
+            <span class="flow__svc">SQS + Lambda</span>
+            <strong>Notifica a gestão</strong>
+            <span>O resultado é entregue ao sistema, e quem abriu a tela pode consultar o andamento a qualquer momento.</span>
+          </li>
+        </ol>
+
+        <p class="flow__note">
+          <span class="tools">S3</span> guarda os certificados digitais das empresas ·
+          <span class="tools">DynamoDB</span> guarda o estado das notas ·
+          inclui os campos da reforma tributária no envio da NFS-e.
+        </p>
+      </section>
+
+      <!-- Experiência -->
+      <section id="experiencia" class="block">
+        <p class="kicker">Experiência</p>
+        <h2>Trajetória</h2>
+
+        <ol class="timeline">
+          <li class="job">
+            <p class="job__date">mar 2026 – atual</p>
+            <h3>Desenvolvedor Python / RPA <span>Autodev · PJ</span></h3>
+            <p>
+              Desenvolvimento e manutenção de robôs RPA e automações para Legal Ops, usadas por
+              escritórios de advocacia e departamentos jurídicos de grandes empresas.
+            </p>
+            <ul>
+              <li>Robôs em Python com Selenium e Playwright que operam sistemas e portais jurídicos, rodando em produção com agendamento, filas e retentativas.</li>
+              <li>Modo de simulação com trava de gravação: o robô percorre o fluxo inteiro sem salvar nada até ser liberado.</li>
+              <li>Investigação de falhas em produção: captura de evidências em timeouts, circuit breaker e ajustes quando um sistema de terceiros muda a tela.</li>
+              <li>Integração por APIs, ETL e processamento de dados entre sistemas.</li>
+            </ul>
+            <p class="tools">Python · Selenium · Playwright · FastAPI · MongoDB · RabbitMQ · Temporal · Docker · Azure Blob</p>
+          </li>
+
+          <li class="job">
+            <p class="job__date">jan 2026 – atual</p>
+            <h3>Desenvolvedor Full Stack <span>Radio Memory</span></h3>
+            <p>
+              Desenvolvimento e evolução da plataforma web para o segmento de radiologia odontológica,
+              da concepção e planejamento até a implantação e sustentação em produção.
+            </p>
+            <ul>
+              <li>Front-end em Angular e TypeScript: componentes, módulos e funcionalidades para diferentes áreas da plataforma.</li>
+              <li>Back-end em Node.js com arquitetura serverless na AWS (Lambda, API Gateway, DynamoDB, SQS, S3, EC2), APIs REST e webhooks.</li>
+              <li>Backend do módulo fiscal de NFS-e Nacional, descrito acima.</li>
+              <li>MySQL e MariaDB: consultas, modelagem, otimização de queries e integridade dos dados.</li>
+              <li>Extensões de navegador integradas às plataformas de atendimento.</li>
+              <li>Definição de regras de negócio, revisão de código, homologação, publicação e correções em produção.</li>
+            </ul>
+            <p class="tools">Angular · TypeScript · Node.js · AWS · MySQL · MariaDB</p>
+          </li>
+
+          <li class="job">
+            <p class="job__date">abr 2025 – dez 2025</p>
+            <h3>Analista de Suporte Técnico <span>Radio Memory</span></h3>
+            <p>
+              Implantação e treinamento nas clínicas, integração com softwares de aquisição de imagens
+              radiológicas e manutenção de bancos Access e SQL com IBExpert. Treinamento de novos
+              colaboradores do suporte.
+            </p>
+            <ul>
+              <li>Criei o BaseBot, um assistente em Python, Flask e RAG que responde à equipe de suporte com base na base interna de erros e soluções.</li>
+            </ul>
+          </li>
+
+          <li class="job">
+            <p class="job__date">ago 2024 – jan 2025</p>
+            <h3>Analista de Suporte de TI <span>QA – IT Answer</span></h3>
+            <p>
+              Suporte de TI em ambiente hospitalar: sistemas MV (Soul e PEP), Tasy e TOTVS, gestão de
+              acesso no Active Directory, incidentes de hardware e software, equipamentos e painéis de BI.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Formação e eventos -->
+      <section id="formacao" class="block">
+        <p class="kicker">Formação e eventos</p>
+        <h2>Estudo e comunidade</h2>
+
+        <div class="split">
+          <div>
+            <h3 class="minor">Formação</h3>
+            <ul class="plain">
+              <li><strong>Ciência da Computação</strong><span>Centro Universitário UNA · 2023 – 2027</span></li>
+              <li><strong>Técnico em Desenvolvimento de Sistemas</strong><span>Proz Educação · 2022 – 2024</span></li>
+            </ul>
+
+            <h3 class="minor">Cursos</h3>
+            <ul class="plain">
+              <li><strong>Pipeline Completa de Dados: Python, SQL e n8n</strong><span>Semana da Jornada de Dados · ago 2025</span></li>
+              <li><strong>Angular 14: conceitos e primeiro CRUD</strong></li>
+              <li><strong>Trabalhando com Services no Angular</strong></li>
+              <li><strong>Desenvolvedor Back-End</strong></li>
+            </ul>
+
+            <h3 class="minor">Idiomas</h3>
+            <ul class="plain">
+              <li><strong>Português</strong><span>nativo</span></li>
+              <li><strong>Inglês</strong><span>intermediário</span></li>
+              <li><strong>Espanhol</strong><span>básico</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="minor">Eventos</h3>
+            <ol class="events">
+              <li>
+                <span class="events__date">2026</span>
+                <div>
+                  <strong>DevFest Belo Horizonte · GDG BH</strong>
+                  <p>Reforma tributária para quem escreve código, segurança de aplicações, alucinações de IA em empresas e agentes com Google ADK.</p>
+                </div>
+              </li>
+              <li>
+                <span class="events__date">ago 2025</span>
+                <div>
+                  <a href="https://www.linkedin.com/posts/deywid-souza_tech-gdg-gdgbelohorizonte-activity-7363373361659359232-qf_3" target="_blank" rel="noopener">GDG BH Meet #1 · Localiza&amp;Co</a>
+                  <p>Concorrência em Node.js (Event Loop e Worker Threads) e Saga Pattern em microsserviços.</p>
+                </div>
+              </li>
+              <li>
+                <span class="events__date">ago 2025</span>
+                <div>
+                  <strong>Bitcoin Students Day · Casa21</strong>
+                  <p>Workshops práticos: nó Bitcoin na rede Signet com Docker e aplicação full stack sobre Lightning Network.</p>
+                </div>
+              </li>
+              <li>
+                <span class="events__date">jul 2025</span>
+                <div>
+                  <a href="https://www.linkedin.com/posts/deywid-souza_blockchain-web3-solidity-activity-7347435815884488704-0HmY" target="_blank" rel="noopener">Workshop Web3 · PUC Minas</a>
+                  <p>Tokens ERC-20 e ERC-721 com OpenZeppelin, contratos em Solidity e deploy em testnet.</p>
+                </div>
+              </li>
+              <li>
+                <span class="events__date">jun 2025</span>
+                <div>
+                  <a href="https://www.linkedin.com/posts/deywid-souza_gdg-webai-ai-activity-7340149927685029889-YepS" target="_blank" rel="noopener">Google I/O Extended BH · PUC Minas</a>
+                  <p>IA no ciclo de desenvolvimento web, MCP e A2A, agentes com Keras e JAX.</p>
+                </div>
+              </li>
+              <li>
+                <span class="events__date">jun 2025</span>
+                <div>
+                  <a href="https://www.linkedin.com/posts/deywid-souza_cybersecurity-hackingnawebday-infosec-activity-7337656417987846145-J8zy" target="_blank" rel="noopener">Hacking na Web Day</a>
+                  <p>Segurança da informação e hacking ético: vulnerabilidades, phishing, engenharia social e hardware hacking.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="block block--last">
+        <p class="kicker">Contato</p>
+        <ul class="contact">
+          <li><span>E-mail</span><a href="mailto:deywid2005@gmail.com">deywid2005@gmail.com</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/deywid-souza" target="_blank" rel="noopener">linkedin.com/in/deywid-souza</a></li>
+          <li><span>GitHub</span><a href="https://github.com/Deywid12" target="_blank" rel="noopener">github.com/Deywid12</a></li>
+          <li><span>WhatsApp</span><a href="https://wa.me/5531998984437" target="_blank" rel="noopener">(31) 99898-4437</a></li>
+        </ul>
+        <p class="footer">© <span id="ano">2026</span> Deywid Luiz Souza Tavares</p>
+      </section>
+    </main>
+  </div>
 
   <script src="./script.js"></script>
 </body>

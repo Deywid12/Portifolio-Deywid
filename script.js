@@ -1,40 +1,25 @@
-// Menu no celular
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.getElementById('menu');
-
-if (menuBtn && menu) {
-  menuBtn.addEventListener('click', () => {
-    const aberto = menu.classList.toggle('is-open');
-    menuBtn.setAttribute('aria-expanded', String(aberto));
-  });
-
-  menu.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      menu.classList.remove('is-open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    });
-  });
-}
-
 // Ano no rodapé
 const ano = document.getElementById('ano');
 if (ano) ano.textContent = new Date().getFullYear();
 
-// Entrada suave das seções ao rolar a página
-const alvos = document.querySelectorAll('.section__head, .service, .principles > div, .job, .project, .edu, .note');
+// Destaca no índice lateral a seção que está na tela
+const linksIndice = document.querySelectorAll('.toc a');
+const secoes = [...linksIndice]
+  .map((link) => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
 
-if ('IntersectionObserver' in window) {
+if ('IntersectionObserver' in window && secoes.length) {
+  const marcar = (id) => {
+    linksIndice.forEach((link) => {
+      link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+    });
+  };
+
   const observer = new IntersectionObserver((entradas) => {
     entradas.forEach((entrada) => {
-      if (entrada.isIntersecting) {
-        entrada.target.classList.add('is-visible');
-        observer.unobserve(entrada.target);
-      }
+      if (entrada.isIntersecting) marcar(entrada.target.id);
     });
-  }, { rootMargin: '0px 0px -8% 0px' });
+  }, { rootMargin: '-35% 0px -60% 0px' });
 
-  alvos.forEach((el) => {
-    el.classList.add('reveal');
-    observer.observe(el);
-  });
+  secoes.forEach((secao) => observer.observe(secao));
 }
