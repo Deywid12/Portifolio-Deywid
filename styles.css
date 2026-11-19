@@ -227,7 +227,7 @@ code {
 }
 .intro {
   font-family: var(--serif);
-  font-size: clamp(36px, 4.2vw, 60px);
+  font-size: clamp(34px, 3.7vw, 54px);
   line-height: 1.04;
   letter-spacing: -.02em;
   margin-bottom: 32px;
@@ -312,6 +312,15 @@ code {
   font-size: 15px;
   line-height: 2.1;
 }
+.case__link {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.case__link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.prose code { color: var(--ink); font-size: 13px; }
+.prose p { line-height: 1.85; }
 
 /* fluxo do módulo fiscal */
 .flow { list-style: none; margin: 0; padding: 0; counter-reset: passo; }

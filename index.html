@@ -73,16 +73,22 @@
         <div class="about">
           <div>
             <p class="intro">
-              Construo aplicações web, backends <em>serverless</em> na AWS e automações
-              que rodam em produção.
+              Construo aplicações web, backends <em>serverless</em> na AWS, automações
+              que rodam em produção e pipelines de dados.
             </p>
             <div class="prose">
               <p>
-                Hoje trabalho em duas frentes. Na <strong>Radio Memory</strong>, sou desenvolvedor full stack
-                da plataforma usada por clínicas de radiologia odontológica: telas em Angular, APIs em
-                Node.js e serviços em Lambda, SQS e DynamoDB. Na <strong>Autodev</strong>, escrevo robôs
-                RPA em Python que operam sistemas jurídicos para escritórios de advocacia e departamentos
-                jurídicos de grandes empresas.
+                Na <strong>Radio Memory</strong>, sou desenvolvedor full stack e desenvolvo as plataformas
+                usadas por clínicas de radiologia odontológica. Minhas principais stacks são
+                <code>Angular</code> <code>TypeScript</code> <code>Node.js</code> e serviços AWS, como
+                <code>Lambda</code> <code>API Gateway</code> <code>SQS</code> <code>DynamoDB</code>
+                <code>S3</code> e <code>CloudFront</code>.
+              </p>
+              <p>
+                Na <strong>Autodev</strong>, desenvolvo automações RPA, ETL e análise de dados para operações
+                jurídicas de escritórios de advocacia e departamentos jurídicos de grandes empresas, usando
+                <code>Python</code> <code>Playwright</code> <code>Selenium</code> <code>Temporal</code>
+                <code>MongoDB</code> <code>PostgreSQL</code> e <code>Azure Blob</code>.
               </p>
               <p>
                 Antes de programar profissionalmente, trabalhei no suporte técnico, em hospitais e
@@ -94,7 +100,7 @@
 
           <dl class="facts">
             <div><dt>Atualmente</dt><dd>Radio Memory · Autodev</dd></div>
-            <div><dt>Foco</dt><dd>Full stack · AWS · RPA</dd></div>
+            <div><dt>Foco</dt><dd>Full stack · AWS · RPA · Dados</dd></div>
             <div><dt>Linguagens</dt><dd>TypeScript · JavaScript · Python · SQL</dd></div>
             <div><dt>Formação</dt><dd>Ciência da Computação · UNA</dd></div>
             <div><dt>Local</dt><dd>Contagem · MG</dd></div>
@@ -254,6 +260,96 @@
             <code>Lambda</code> <code>S3</code> <code>CloudFront</code> <code>SQL</code> <code>Firebase Auth</code>
           </p>
         </article>
+
+        <!-- Case: automações Autodev -->
+        <article class="case">
+          <header class="case__head">
+            <p class="case__tag">Autodev · RPA · Dados</p>
+            <h3>Automações para operações jurídicas</h3>
+            <p class="case__lead">
+              Robôs que fazem, nos sistemas jurídicos e portais, o trabalho que antes era feito à mão
+              pelas equipes. Cada robô roda agendado ou consumindo uma fila de tarefas, registra o
+              resultado de cada processo e manda relatório por e-mail.
+            </p>
+          </header>
+
+          <div class="modules">
+            <div class="module">
+              <h4>Lançamento de sentença</h4>
+              <p>Lê a decisão do processo, cria o andamento de sentença ou acórdão, preenche a solicitação e anexa os documentos da decisão. Tem um plano de teste para cada tipo de decisão e só grava depois de liberado.</p>
+            </div>
+            <div class="module">
+              <h4>Baixa de tarefas de recurso</h4>
+              <p>Rotina noturna que localiza a pasta pelo número do processo (CNJ), junta a peça do recurso e conclui a tarefa. De manhã sai o relatório com uma linha por tarefa.</p>
+            </div>
+            <div class="module">
+              <h4>Coleta e anexação de documentos</h4>
+              <p>Em duas etapas: baixa os documentos do portal e guarda no Azure Blob; depois localiza a pasta e anexa no GED por API. A tarefa só é concluída quando o anexo confirma.</p>
+            </div>
+            <div class="module">
+              <h4>Cadastro de novos casos</h4>
+              <p>Cruza a base de processos do cliente com a do escritório pelo CNJ e cadastra os casos que ainda não têm pasta, com os dados do relatório e a petição inicial.</p>
+            </div>
+            <div class="module">
+              <h4>Bases e relatórios (ETL)</h4>
+              <p>Exporta relatórios dos sistemas, valida as planilhas, converte para JSONL e dispara a carga no PostgreSQL. Inclui relatórios semanais de estatística enviados por e-mail.</p>
+            </div>
+            <div class="module">
+              <h4>Fase e andamentos</h4>
+              <p>Atualiza a fase processual e lança andamentos com conferência antes e depois: mesmo processo, não encerrado, fase válida. Em modo de simulação faz tudo, menos salvar.</p>
+            </div>
+          </div>
+
+          <p class="case__foot">
+            <code>Python</code> <code>Playwright</code> <code>Selenium</code> <code>Temporal</code>
+            <code>MongoDB</code> <code>PostgreSQL</code> <code>Azure Blob</code> <code>Docker</code> <code>pytest</code>
+          </p>
+        </article>
+
+        <!-- Case: nó Bitcoin Signet -->
+        <article class="case">
+          <header class="case__head">
+            <p class="case__tag">Projeto pessoal · Workshop Vinteum</p>
+            <h3>Nó Bitcoin em Signet com Docker</h3>
+            <p class="case__lead">
+              Ambiente para subir um nó Bitcoin Core na rede de testes Signet e, opcionalmente, um
+              minerador, tudo em containers. Partiu do material do workshop da Vinteum, e eu adaptei
+              para rodar no Windows com WSL.
+            </p>
+          </header>
+
+          <div class="modules">
+            <div class="module">
+              <h4>Dois serviços no Compose</h4>
+              <p>Um container com o nó e outro com o minerador, ambos em Debian slim, com Bitcoin Core 29 baixado direto dos binários oficiais.</p>
+            </div>
+            <div class="module">
+              <h4>Nó Signet</h4>
+              <p>Rede Signet com challenge próprio do workshop, índice de transações ligado e portas de RPC e P2P expostas. Roda com usuário sem privilégios (gosu).</p>
+            </div>
+            <div class="module">
+              <h4>Minerador</h4>
+              <p>Usa o script de mineração do próprio Bitcoin Core para gerar blocos na Signet, falando com o nó por RPC.</p>
+            </div>
+            <div class="module">
+              <h4>O que eu ajustei</h4>
+              <p>Quebras de linha do Windows no entrypoint, conflito de portas entre nó e minerador e o apontamento de RPC do minerador para o nó.</p>
+            </div>
+            <div class="module">
+              <h4>Ambiente reproduzível</h4>
+              <p>Flake Nix com um shell de desenvolvimento que já traz o Docker, para Linux e macOS.</p>
+            </div>
+            <div class="module">
+              <h4>Documentação</h4>
+              <p>README com o passo a passo para clonar, subir os containers e operar o nó.</p>
+            </div>
+          </div>
+
+          <p class="case__foot">
+            <code>Docker</code> <code>Docker Compose</code> <code>Bitcoin Core</code> <code>Bash</code> <code>Nix</code> <code>WSL</code>
+            · <a class="case__link" href="https://github.com/Deywid12/infra-signet-docker" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+          </p>
+        </article>
       </section>
 
       <!-- ============ 04 Experiência ============ -->
@@ -288,7 +384,7 @@
             <ul>
               <li>Front-end em Angular e TypeScript: componentes, módulos e funcionalidades para diferentes áreas da plataforma.</li>
               <li>Back-end em Node.js com arquitetura serverless na AWS (Lambda, API Gateway, DynamoDB, SQS, S3, EC2), APIs REST e webhooks.</li>
-              <li>Módulo fiscal de NFS-e Nacional e Dashboard do Assinante, descritos acima.</li>
+              <li>Módulo fiscal de NFS-e Nacional e Dashboard do Assinante, descritos em destaque.</li>
               <li>MySQL e MariaDB: consultas, modelagem, otimização de queries e integridade dos dados.</li>
               <li>Extensões de navegador integradas às plataformas de atendimento.</li>
               <li>Definição de regras de negócio, revisão de código, homologação, publicação e correções em produção.</li>
@@ -343,7 +439,7 @@
             <h3 class="minor">Cursos e certificações</h3>
             <ul class="list">
               <li>Pipeline Completa de Dados: Python, SQL e n8n <span>Jornada de Dados · 2025</span></li>
-              <li>Angular 14: conceitos e primeiro CRUD</li>
+              <li>Angular: Curso Introdutório <span>Rocketseat · 2025</span></li>
               <li>Trabalhando com Services no Angular</li>
               <li>Desenvolvedor Back-End</li>
             </ul>
@@ -353,7 +449,6 @@
             <ul class="list">
               <li>Português <span>nativo</span></li>
               <li>Inglês <span>intermediário</span></li>
-              <li>Espanhol <span>básico</span></li>
             </ul>
           </div>
         </div>
@@ -380,7 +475,7 @@
           <li class="event">
             <p class="event__date">ago 2025</p>
             <h3>Bitcoin Students Day</h3>
-            <p class="event__where">Casa21</p>
+            <p class="event__where">Vinteum</p>
             <p>Workshops práticos: nó Bitcoin na rede Signet com Docker e aplicação full stack sobre Lightning Network.</p>
           </li>
           <li class="event">
