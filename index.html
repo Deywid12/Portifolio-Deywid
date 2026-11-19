@@ -1,491 +1,341 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Deywid Souza - Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deywid Souza · Desenvolvedor de software</title>
+  <meta name="description" content="Desenvolvedor de software. Automação e RPA, APIs e integrações em AWS e aplicações web em Angular e Node.js.">
+  <meta property="og:title" content="Deywid Souza · Desenvolvedor de software">
+  <meta property="og:description" content="Automação e RPA, APIs e integrações em AWS e aplicações web.">
+  <meta property="og:image" content="https://deywid12.github.io/Portifolio-Deywid/img/deywid.png">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231c1a17'/%3E%3Ctext x='16' y='21.5' font-family='Georgia,serif' font-size='15' fill='%23f5f3ee' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E">
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Chart.js (opcional; deixe se for usar gráficos) -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  <!-- CSS customizado -->
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="bg-slate-900">
-  <!-- Navigation -->
-  <nav class="fixed top-0 w-full bg-slate-900/95 backdrop-blur-md z-50 shadow-lg border-b border-slate-700">
-    <div class="max-w-6xl mx-auto px-4 py-4">
-      <div class="flex justify-between items-center">
-        <div class="text-2xl font-bold text-white">Deywid Souza</div>
-        <div class="hidden md:flex space-x-8">
-          <a href="#home" class="text-slate-300 hover:text-blue-400 transition-colors">Início</a>
-          <a href="#about" class="text-slate-300 hover:text-blue-400 transition-colors">Sobre</a>
-          <a href="#projects" class="text-slate-300 hover:text-blue-400 transition-colors">Projetos</a>
-          <a href="#skills" class="text-slate-300 hover:text-blue-400 transition-colors">Habilidades</a>
-          <a href="#contact" class="text-slate-300 hover:text-blue-400 transition-colors">Contato</a>
-        </div>
-        <button id="mobile-menu" class="md:hidden">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </nav>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-  <!-- apresentação -->
-  <section id="home" class="gradient-bg min-h-screen flex items-center justify-center text-white">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <div class="mb-8">
-        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-white/20 overflow-hidden border-4 border-white/30 shadow-2xl">
-          <img src="img/social 2.png"
-               alt="Deywid Souza"
-               class="w-full h-full object-cover object-center filter brightness-110 contrast-105"
-               onerror="this.parentElement.innerHTML='<div class=\'w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold shadow-inner\'>DS</div>'">
-        </div>
-        <h1 class="text-5xl md:text-7xl font-bold mb-4">Deywid Souza</h1>
-        <div class="text-xl md:text-2xl mb-8">
-          <span id="typing-text" class="typing-animation">Desenvolvedor Full-Stack</span>
-        </div>
-        <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-          Desenvolvendo soluções Full-Stack escaláveis, automações inteligentes e agentes de IA para otimizar processos
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a href="#topo" class="brand">Deywid Souza</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav id="menu" class="menu" aria-label="Seções">
+        <a href="#servicos">Serviços</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato" class="menu__cta">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Abertura -->
+    <section id="topo" class="hero wrap">
+      <div class="hero__text">
+        <p class="eyebrow">Desenvolvedor de software · Python, TypeScript, AWS</p>
+        <h1>Eu transformo trabalho manual e repetitivo em <em>software que roda sozinho.</em></h1>
+        <p class="lead">
+          Hoje escrevo robôs de RPA para operações jurídicas na Autodev e desenvolvo, na Radio Memory,
+          o sistema de gestão para clínicas de radiologia odontológica, incluindo o backend do módulo
+          de nota fiscal em AWS Lambda.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#projects" class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors">
-            Ver Projetos
+        <div class="actions">
+          <a class="btn btn--solid" href="#contato">Falar comigo</a>
+          <a class="btn" href="#experiencia">Ver experiência</a>
+        </div>
+      </div>
+      <figure class="hero__photo">
+        <img src="img/deywid.png" alt="Deywid Souza trabalhando no notebook" width="295" height="364">
+      </figure>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section wrap">
+      <header class="section__head">
+        <p class="eyebrow">O que eu faço</p>
+        <h2>Três tipos de problema que eu resolvo</h2>
+      </header>
+
+      <ol class="services">
+        <li class="service">
+          <span class="service__num">01</span>
+          <h3>Automação e RPA</h3>
+          <p>
+            Se alguém passa o dia copiando dados de um sistema para outro, preenchendo o mesmo
+            formulário ou baixando relatórios, isso pode virar um robô. Eu mapeio o processo com
+            quem faz o trabalho, automatizo e deixo rodando com agendamento, log e relatório.
+          </p>
+          <p class="tools">Python · Selenium · Playwright · Pandas · ETL</p>
+        </li>
+        <li class="service">
+          <span class="service__num">02</span>
+          <h3>APIs e integrações</h3>
+          <p>
+            Faço sistemas que não conversam passarem a conversar: APIs REST, webhooks, filas de
+            mensagem e funções serverless. Quando um serviço externo é lento, o pedido vai para
+            segundo plano e o usuário não fica esperando.
+          </p>
+          <p class="tools">Node.js · TypeScript · FastAPI · AWS Lambda · API Gateway · RabbitMQ</p>
+        </li>
+        <li class="service">
+          <span class="service__num">03</span>
+          <h3>Aplicações web</h3>
+          <p>
+            Telas e módulos de sistemas internos, do front ao banco: formulários, listagens,
+            filtros e regras de negócio, ligados a um backend próprio.
+          </p>
+          <p class="tools">Angular · TypeScript · PostgreSQL · MySQL · MongoDB</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Como trabalho -->
+    <section class="section wrap">
+      <header class="section__head">
+        <p class="eyebrow">Como eu trabalho</p>
+        <h2>O que vem junto com o código</h2>
+      </header>
+      <dl class="principles">
+        <div>
+          <dt>Testo antes de gravar</dt>
+          <dd>Robôs e integrações rodam primeiro em simulação. Só escrevem em produção depois que o resultado foi conferido.</dd>
+        </div>
+        <div>
+          <dt>Conto com o erro</dt>
+          <dd>Retentativa, timeout e registro da falha fazem parte da entrega. Quando algo quebra, dá para saber onde e por quê.</dd>
+        </div>
+        <div>
+          <dt>Escrevo para quem vem depois</dt>
+          <dd>Documentação em linguagem simples, dizendo o que o sistema faz e o que ainda não faz.</dd>
+        </div>
+        <div>
+          <dt>Converso com quem usa</dt>
+          <dd>Vim do suporte técnico. Antes de escrever código, procuro entender a rotina de quem vai usar.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Experiência -->
+    <section id="experiencia" class="section wrap">
+      <header class="section__head">
+        <p class="eyebrow">Experiência</p>
+        <h2>Onde trabalhei e o que fiz</h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="job">
+          <div class="job__meta">
+            <span class="job__date">mar 2026 – atual</span>
+            <span class="job__type">PJ</span>
+          </div>
+          <div class="job__body">
+            <h3>Desenvolvedor Python / RPA <span class="at">Autodev</span></h3>
+            <p>
+              Desenvolvo e mantenho robôs que operam sistemas jurídicos no lugar de pessoas:
+              lançam andamentos, anexam documentos, dão baixa em tarefas e enviam relatórios
+              de execução.
+            </p>
+            <ul>
+              <li>Robôs em produção com agendamento, filas e retentativas.</li>
+              <li>Modo de simulação com trava de gravação: o robô percorre o fluxo inteiro sem salvar nada até ser liberado.</li>
+              <li>Investigação de falhas em produção: captura de evidências em timeouts, circuit breaker e ajustes quando o sistema de terceiros muda a tela.</li>
+              <li>Integração por APIs, tratamento de dados e ETL.</li>
+            </ul>
+            <p class="tools">Python · Selenium · Playwright · FastAPI · MongoDB · RabbitMQ · Docker</p>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job__meta">
+            <span class="job__date">jan 2026 – atual</span>
+          </div>
+          <div class="job__body">
+            <h3>Desenvolvedor Júnior <span class="at">Radio Memory</span></h3>
+            <p>
+              Desenvolvimento full stack da plataforma usada por clínicas de radiologia odontológica.
+            </p>
+            <ul>
+              <li>Backend do módulo de nota fiscal (NFS-e Nacional) em AWS Lambda e API Gateway. A emissão é assíncrona: o módulo aceita o pedido, processa em segundo plano e avisa por webhook se a nota foi autorizada ou rejeitada.</li>
+              <li>Inclusão dos campos da reforma tributária no envio da NFS-e.</li>
+              <li>Telas e módulos em Angular e TypeScript, APIs em Node.js, regras de negócio e correções em produção.</li>
+            </ul>
+            <p class="tools">TypeScript · Angular · Node.js · AWS Lambda · API Gateway · SQL</p>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job__meta">
+            <span class="job__date">abr 2025 – dez 2025</span>
+          </div>
+          <div class="job__body">
+            <h3>Analista de Suporte Técnico <span class="at">Radio Memory</span></h3>
+            <p>
+              Implantação e suporte dos sistemas nas clínicas, integração com softwares de aquisição
+              de imagens radiológicas e manutenção de bancos Access e SQL (IBExpert).
+            </p>
+            <ul>
+              <li>Criei o BaseBot, um assistente que responde à equipe de suporte usando a base interna de erros e soluções.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job__meta">
+            <span class="job__date">ago 2024 – jan 2025</span>
+          </div>
+          <div class="job__body">
+            <h3>Analista de Suporte de TI <span class="at">QA – IT Answer</span></h3>
+            <p>
+              Suporte de TI em hospitais: sistema de gestão hospitalar MV, atendimento a usuários,
+              incidentes de hardware e software, domínio, equipamentos e painéis de BI.
+            </p>
+          </div>
+        </li>
+      </ol>
+
+      <p class="note">
+        Comecei no suporte e foi lá que vi quanto tempo as equipes perdem com tarefas repetitivas.
+        É esse tipo de trabalho que eu procuro automatizar hoje.
+      </p>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section wrap">
+      <header class="section__head">
+        <p class="eyebrow">Projetos públicos</p>
+        <h2>Código que dá para abrir</h2>
+        <p class="section__sub">
+          A maior parte do meu trabalho atual está em repositórios privados das empresas e aparece
+          descrita acima. Estes estão no meu GitHub.
+        </p>
+      </header>
+
+      <ul class="projects">
+        <li>
+          <a class="project" href="https://github.com/Deywid12/Api-ChatGPT-Basebot" target="_blank" rel="noopener">
+            <h3>BaseBot</h3>
+            <p>API em Flask com RAG que responde dúvidas do suporte usando só a base interna de erros, manutenções e integrações, organizada em causa, tratativa e observações.</p>
+            <span class="tools">Python · Flask · OpenAI · RAG</span>
+            <span class="project__go" aria-hidden="true">↗</span>
           </a>
-          <a href="#contact" class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-colors">
-            Entre em Contato
+        </li>
+        <li>
+          <a class="project" href="https://github.com/Deywid12/SuporteBot-PHP" target="_blank" rel="noopener">
+            <h3>SuporteBot</h3>
+            <p>Versão em PHP do assistente de suporte, com endpoint de chat e a base de conhecimento estruturada para o GPT.</p>
+            <span class="tools">PHP · OpenAI · API</span>
+            <span class="project__go" aria-hidden="true">↗</span>
           </a>
-        </div>
-      </div>
-    </div>
-  </section>
+        </li>
+        <li>
+          <a class="project" href="https://github.com/Deywid12/BLOG-RADIO-MEMORY" target="_blank" rel="noopener">
+            <h3>Blog de notícias</h3>
+            <p>Aplicação Angular que consome uma API de notícias: filtro por categoria, busca, fixados primeiro, leitura em modal e HTML sanitizado.</p>
+            <span class="tools">Angular · TypeScript</span>
+            <span class="project__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="https://github.com/Deywid12/Sistema-de-Mensageria-RabbitMQ" target="_blank" rel="noopener">
+            <h3>Mensageria com RabbitMQ</h3>
+            <p>Publisher e consumer com a biblioteca Pika: um envia mensagens para a fila, o outro escuta e processa em tempo real.</p>
+            <span class="tools">Python · Pika · RabbitMQ</span>
+            <span class="project__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="https://github.com/Deywid12/Automacao-Formulario-Selenium" target="_blank" rel="noopener">
+            <h3>Automação de formulário</h3>
+            <p>Meu primeiro estudo de automação web: abre o Chrome, acessa o formulário, preenche nome, e-mail e telefone e envia.</p>
+            <span class="tools">Python · Selenium</span>
+            <span class="project__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="https://github.com/Deywid12/infra-signet-docker" target="_blank" rel="noopener">
+            <h3>Nó Bitcoin em Signet</h3>
+            <p>Ambiente feito em workshop para rodar um nó Bitcoin na rede Signet, com miner opcional, usando Docker Compose e Nix.</p>
+            <span class="tools">Docker · Docker Compose · Nix</span>
+            <span class="project__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      </ul>
+    </section>
 
-  <!-- Sobre mim -->
-  <section id="about" class="py-20 bg-slate-800">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-16 fade-in">
-        <h2 class="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
-        <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
-      </div>
+    <!-- Formação -->
+    <section id="formacao" class="section wrap">
+      <header class="section__head">
+        <p class="eyebrow">Formação e comunidade</p>
+        <h2>Estudo e eventos</h2>
+      </header>
 
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="fade-in">
-          <div class="bg-gradient-to-br from-slate-700 to-slate-600 p-8 rounded-2xl border border-slate-600">
-            <div class="text-8xl text-center mb-4">💻</div>
-            <div class="text-center">
-              <h3 class="text-2xl font-bold text-white mb-2">Desenvolvedor Full-Stack</h3>
-              <p class="text-slate-300">Soluções escaláveis e inteligentes</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="fade-in">
-          <h3 class="text-2xl font-bold text-white mb-6">Minha Jornada</h3>
-          <p class="text-slate-300 mb-6 leading-relaxed">
-            Desenvolvedor de Software, com experiência em projetos voltados para full-stack, automações, análise de dados, agentes de IA e soluções altamente escaláveis.
-          </p>
-          <p class="text-slate-300 mb-6 leading-relaxed">
-            Minha sólida experiência como suporte técnico foi essencial para desenvolver uma visão mais clara sobre as dores das equipes, especialmente em tarefas repetitivas, maçantes e de grande volume. Essa perspectiva tem sido crucial para a criação de soluções otimizadas com foco em automação.
-          </p>
-          <p class="text-slate-300 mb-6 leading-relaxed">
-            Atuamente trabalho como analista de suporte, resolvendo demandas do sistema e fazendo manutenção em banco de dados e tambem trabalho com projetos voltados para Full-Stack e automações.
-          </p>
-
-          <div class="grid grid-cols-2 gap-4">
-            <div class="text-center p-4 bg-slate-700 rounded-lg border border-slate-600">
-              <div class="text-2xl font-bold text-blue-400">5+</div>
-              <div class="text-sm text-slate-300">Automações Criadas</div>
-            </div>
-            <div class="text-center p-4 bg-slate-700 rounded-lg border border-slate-600">
-              <div class="text-2xl font-bold text-blue-400">5+</div>
-              <div class="text-sm text-slate-300">APIs Desenvolvidas</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- seção de projetos -->
-  <section id="projects" class="py-20 bg-slate-900">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-16 fade-in">
-        <h2 class="text-4xl font-bold text-white mb-4">Meus Projetos</h2>
-        <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
-        <p class="text-slate-300 max-w-2xl mx-auto">
-          Explore alguns dos meus projetos mais impactantes em desenvolvimento full-stack, automação e inteligência artificial
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Projetos 1 -->
-        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
-          <div class="p-6">
-            <div class="text-4xl mb-4">🚀</div>
-            <h3 class="text-xl font-bold text-white mb-3">Sistema de Mensageria RabbitMQ</h3>
-            <p class="text-slate-300 mb-4">
-              Sistema que se comunica diretamente com as Exchanges e com as Queues do sistema de Mensageria RabbitMQ.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-3 py-1 bg-blue-900 text-blue-300 text-sm rounded-full">Python</span>
-              <span class="px-3 py-1 bg-green-900 text-green-300 text-sm rounded-full">pika</span>
-              <span class="px-3 py-1 bg-purple-900 text-purple-300 text-sm rounded-full">RabbitMQ</span>
-            </div>
-            <a href="https://github.com/Deywid12/Sistema-de-Mensageria-RabbitMQ">
-            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
-              Ver Detalhes
-            </button>
-            </a>
-          </div>
+      <div class="edu">
+        <div class="edu__col">
+          <h3 class="minor">Formação</h3>
+          <ul class="plain">
+            <li><strong>Ciência da Computação</strong><span>Centro Universitário UNA · 2023 – 2027</span></li>
+            <li><strong>Técnico em Desenvolvimento de Sistemas</strong><span>Proz Educação · 2022 – 2024</span></li>
+          </ul>
+          <h3 class="minor">Idiomas</h3>
+          <ul class="plain">
+            <li><strong>Português</strong><span>nativo</span></li>
+            <li><strong>Inglês</strong><span>intermediário</span></li>
+          </ul>
         </div>
 
-        <!-- Projetos 2 -->
-        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
-          <div class="p-6">
-            <div class="text-4xl mb-4">🤖</div>
-            <h3 class="text-xl font-bold text-white mb-3">API ChatGPT</h3>
-            <p class="text-slate-300 mb-4">
-              API de suporte técnico desenvolvida para a Radio Memory, com o objetivo de centralizar a base de conhecimento de erros e soluções.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-3 py-1 bg-orange-900 text-orange-300 text-sm rounded-full">Python</span>
-              <span class="px-3 py-1 bg-red-900 text-red-300 text-sm rounded-full">Flask</span>
-              <span class="px-3 py-1 bg-yellow-900 text-yellow-300 text-sm rounded-full">Rag</span>
-              <span class="px-3 py-1 bg-yellow-900 text-yellow-300 text-sm rounded-full">OpenAI</span>
-            </div>
-              <a href="https://github.com/Deywid12/Api-ChatGPT-Basebot">
-                 <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                  Ver Detalhes
-                  </button>
-              </a>
-          </div>
-        </div>
-
-        <!-- Projetos 3 -->
-        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
-          <div class="p-6">
-            <div class="text-4xl mb-4">📊</div>
-            <h3 class="text-xl font-bold text-white mb-3">Automação para preenchimento de formularios</h3>
-            <p class="text-slate-300 mb-4">
-              Está automação abre o navegador Chrome, clica no botão de acesso de formulario e preenche o formulario com nome, e-mail e telefone e envia o formulário..
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-3 py-1 bg-indigo-900 text-indigo-300 text-sm rounded-full">Python</span>
-              <span class="px-3 py-1 bg-pink-900 text-pink-300 text-sm rounded-full">Selenium</span>
-            </div>
-            <a href="https://github.com/Deywid12/Automacao-Formulario-Selenium">
-            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
-              Ver Detalhes
-            </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Projetos 4 -->
-        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
-          <div class="p-6">
-            <div class="text-4xl mb-4">⚡</div>
-            <h3 class="text-xl font-bold text-white mb-3">Sistema de Machine Learning</h3>
-            <p class="text-slate-300 mb-4">
-              Implementação de modelos ML com Scikit-Learn e JAX para predições em tempo real com alta performance.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-3 py-1 bg-cyan-900 text-cyan-300 text-sm rounded-full">Python</span>
-              <span class="px-3 py-1 bg-lime-900 text-lime-300 text-sm rounded-full">Scikit-Learn</span>
-              <span class="px-3 py-1 bg-amber-900 text-amber-300 text-sm rounded-full">JAX</span>
-            </div>
-            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
-              Ver Detalhes
-            </button>
-          </div>
-        </div>
-
-        <!-- Projetos 5 -->
-        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
-          <div class="p-6">
-            <div class="text-4xl mb-4">🔗</div>
-            <h3 class="text-xl font-bold text-white mb-3">Site de Portfólio</h3>
-            <p class="text-slate-300 mb-4">
-              Site desenvolvido com HTML, CSS (TailwindCSS) e JavaScript. O objetivo é apresentar meus projetos, habilidades e formas de contato de maneira prática e moderna.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-3 py-1 bg-violet-900 text-violet-300 text-sm rounded-full">HTML</span>
-              <span class="px-3 py-1 bg-rose-900 text-rose-300 text-sm rounded-full">CSS</span>
-              <span class="px-3 py-1 bg-rose-900 text-rose-300 text-sm rounded-full">TailwindCSS</span>
-              <span class="px-3 py-1 bg-emerald-900 text-emerald-300 text-sm rounded-full">JavaScript</span>
-            </div>
-            <a href="https://github.com/Deywid12/Portifolio-Deywid">
-            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
-              Ver Detalhes
-            </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Projetos 6 -->
-        <div class="bg-slate-800 border border-slate-700 rounded-2xl shadow-lg card-hover fade-in">
-          <div class="p-6">
-            <div class="text-4xl mb-4">🧠</div>
-            <h3 class="text-xl font-bold text-white mb-3">Sistema Infra signet Docker</h3>
-            <p class="text-slate-300 mb-4">
-              Ambiente Docker para rodar um nó Bitcoin na rede Signet (e opcionalmente um miner) de forma simples, usando Docker e Docker Compose.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-3 py-1 bg-blue-900 text-blue-300 text-sm rounded-full">Docker</span>
-              <span class="px-3 py-1 bg-orange-900 text-orange-300 text-sm rounded-full">Nix</span>
-              <span class="px-3 py-1 bg-green-900 text-green-300 text-sm rounded-full">Miner</span>
-            </div>
-            <a href="https://github.com/Deywid12/infra-signet-docker">
-            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
-              Ver Detalhes
-            </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills seção -->
-  <section id="skills" class="py-20 bg-slate-800">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-16 fade-in">
-        <h2 class="text-4xl font-bold text-white mb-4">Habilidades</h2>
-        <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
-        <p class="text-slate-300 max-w-2xl mx-auto">
-          Tecnologias e ferramentas que domino para desenvolver soluções full-stack escaláveis e automações inteligentes
-        </p>
-      </div>
-
-            <!-- SKILLS -->
-    <section id="skills">
-      <div class="container">
-        <h2 class="section-title">Skills e Ferramentas</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Back-end / Automação</h3>
-            <div class="chips">
-              <span class="chip">Python</span>
-              <span class="chip">PHP</span>
-              <span class="chip">Java (Spring)</span>
-              <span class="chip">Node.js</span>
-              <span class="chip">FastAPI</span>
-              <span class="chip">Flask</span>
-              <span class="chip">Selenium</span>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Front-end</h3>
-            <div class="chips">
-              <span class="chip">HTML</span>
-              <span class="chip">CSS</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">Angular</span>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Dados & DB</h3>
-            <div class="chips">
-              <span class="chip">Python (Pandas)</span>
-              <span class="chip">SQL</span>
-              <span class="chip">Access</span>
-              <span class="chip">MySQL</span>
-              <span class="chip">IBExpert</span>
-              <span class="chip">Power BI (básico)</span>
-            </div>
-          </div>
-          <div class="card">
-            <h3>DevOps & Ferramentas</h3>
-            <div class="chips">
-              <span class="chip">Git/GitHub</span>
-              <span class="chip">Docker</span>
-              <span class="chip">Postman</span>
-              <span class="chip">RabbitMQ</span>
-              <span class="chip">WSL</span>
-              <span class="chip">Railway/XAMPP</span>
-            </div>
-          </div>
+        <div class="edu__col">
+          <h3 class="minor">Eventos em 2025</h3>
+          <ul class="events">
+            <li>
+              <a href="https://www.linkedin.com/posts/deywid-souza_cybersecurity-hackingnawebday-infosec-activity-7337656417987846145-J8zy" target="_blank" rel="noopener">Hacking na Web Day</a>
+              <p>Segurança da informação e hacking ético: vulnerabilidades, phishing, engenharia social e hardware hacking.</p>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/posts/deywid-souza_gdg-webai-ai-activity-7340149927685029889-YepS" target="_blank" rel="noopener">Google I/O Extended BH · PUC Minas</a>
+              <p>IA no ciclo de desenvolvimento web, MCP e A2A, e agentes com Keras e JAX.</p>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/posts/deywid-souza_blockchain-web3-solidity-activity-7347435815884488704-0HmY" target="_blank" rel="noopener">Workshop Web3 · PUC Minas</a>
+              <p>Tokens ERC-20 e ERC-721 com OpenZeppelin, contratos em Solidity no Remix e deploy em testnet.</p>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/posts/deywid-souza_tech-gdg-gdgbelohorizonte-activity-7363373361659359232-qf_3" target="_blank" rel="noopener">GDG BH Meet #01 · Localiza&amp;Co</a>
+              <p>Concorrência em Node.js (Event Loop e Worker Threads) e Saga Pattern em microsserviços.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-
-        <div class="fade-in">
-          <h3 class="text-2xl font-bold text-white mb-8">Especialidades</h3>
-
-          <div class="grid grid-cols-2 gap-4">
-            <div class="bg-gradient-to-br from-slate-700 to-slate-600 border border-slate-600 p-6 rounded-xl text-center">
-              <div class="text-3xl mb-3">📊</div>
-              <h4 class="font-semibold text-white mb-2">Visualização</h4>
-              <p class="text-sm text-slate-300">Dashboards interativos</p>
-            </div>
-
-            <div class="bg-gradient-to-br from-slate-700 to-slate-600 border border-slate-600 p-6 rounded-xl text-center">
-              <div class="text-3xl mb-3">🤖</div>
-              <h4 class="font-semibold text-white mb-2">Machine Learning</h4>
-              <p class="text-sm text-slate-300">Modelos preditivos</p>
-            </div>
-
-            <div class="bg-gradient-to-br from-slate-700 to-slate-600 border border-slate-600 p-6 rounded-xl text-center">
-              <div class="text-3xl mb-3">⚙️</div>
-              <h4 class="font-semibold text-white mb-2">APIs RESTful</h4>
-              <p class="text-sm text-slate-300">Desenvolvimento robusto</p>
-            </div>
-
-            <div class="bg-gradient-to-br from-slate-700 to-slate-600 border border-slate-600 p-6 rounded-xl text-center">
-              <div class="text-3xl mb-3">💼</div>
-              <h4 class="font-semibold text-white mb-2">Automação</h4>
-              <p class="text-sm text-slate-300">Automação de processor maçantes</p>
-            </div>
-          </div> 
-
-          <div class="mt-8">
-    <!-- Certificados e Eventos -->
-           <section id="certificados">
-      <div class="container">
-        <h2 class="section-title">Certificados & Eventos</h2>
-        <div class="grid">
-          <div class="card">
-            <h3><a href="https://www.linkedin.com/posts/deywid-souza_cybersecurity-hackingnawebday-infosec-activity-7337656417987846145-J8zy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDH25sBcwvDtZKQ6Wck_C_j_DjowlXt9I8" target="_blank" rel="noopener">Hacking na Web Day (2025)</a></h3>
-            <p class="muted">Dia imersivo focado em segurança da informação e hacking ético, com análise de vulnerabilidades, técnicas de exploração, phishing e engenharia social. As atividades incluíram exercícios práticos e demonstrações de hardware hacking, reforçando boas práticas defensivas e resposta a incidentes.</p>
-            <div class="links" style="margin-top:10px;">
-              <a class="btn ghost" target="_blank" rel="noopener" href="https://www.linkedin.com/posts/deywid-souza_cybersecurity-hackingnawebday-infosec-activity-7337656417987846145-J8zy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDH25sBcwvDtZKQ6Wck_C_j_DjowlXt9I8">Ver no LinkedIn</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3><a href="https://www.linkedin.com/posts/deywid-souza_gdg-webai-ai-activity-7340149927685029889-YepS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDH25sBcwvDtZKQ6Wck_C_j_DjowlXt9I8" rel="noopener">Google I/O Extended BH — PUC Minas (2025)</a></h3>
-            <p class="muted">Encontro da comunidade para discutir os anúncios do Google I/O 2025. Acompanhei a talk do Beto Muniz sobre o papel da IA no ciclo de desenvolvimento web e conceitos como MCP/A2A, além da palestra do Ahirton Lopes, Ph.D., sobre agentes com Keras &amp; JAX e modelos eficientes. Voltei com insights práticos de como a IA está entrando no fluxo do desenvolvedor e tornando soluções mais acessíveis.</p>
-            <div class="links" style="margin-top:10px;">
-              <a class="btn ghost" target="_blank" rel="noopener" href="https://www.linkedin.com/posts/deywid-souza_gdg-webai-ai-activity-7340149927685029889-YepS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDH25sBcwvDtZKQ6Wck_C_j_DjowlXt9I8">Ver no LinkedIn</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3><a href="https://www.linkedin.com/posts/deywid-souza_blockchain-web3-solidity-activity-7347435815884488704-0HmY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDH25sBcwvDtZKQ6Wck_C_j_DjowlXt9I8" target="_blank" rel="noopener">Workshop Web3 — PUC Minas (2025)</a></h3>
-            <p class="muted">Workshop intensivo cobrindo os fundamentos de tokens ERC-20 e ERC-721 e boas práticas com OpenZeppelin. Na parte prática, criei e verifiquei contratos em Solidity no Remix, integrei com MetaMask e uma dApp, realizei deploy em testnet e acompanhei os resultados no OpenSea e no Etherscan.</p>
-            <div class="links" style="margin-top:10px;">
-              <a class="btn ghost" target="_blank" rel="noopener" href="https://www.linkedin.com/posts/deywid-souza_blockchain-web3-solidity-activity-7347435815884488704-0HmY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDH25sBcwvDtZKQ6Wck_C_j_DjowlXt9I8">Ver no LinkedIn</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3><a href="https://www.linkedin.com/posts/deywid-souza_tech-gdg-gdgbelohorizonte-activity-7363373361659359232-qf_3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDH25sBcwvDtZKQ6Wck_C_j_DjowlXt9I8" target="_blank" rel="noopener">GDG BH Meet #01 — Localiza&Co (2025)</a></h3>
-            <p class="muted">Meetup do Google Developer Group com foco em back-end e arquitetura. Destaques para a exposição da Alexia Kattah sobre concorrência em Node.js (Event Loop e Worker Threads) e para a sessão de Saga Pattern com André Luiz Magalhães e Matheus A. P. Spagiari, discutindo consistência e orquestração em microsserviços, além de networking com a comunidade.</p>
-            <div class="links" style="margin-top:10px;">
-              <a class="btn ghost" target="_blank" rel="noopener" href="https://www.linkedin.com/posts/deywid-souza_tech-gdg-gdgbelohorizonte-activity-7363373361659359232-qf_3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDH25sBcwvDtZKQ6Wck_C_j_DjowlXt9I8">Ver no LinkedIn</a>
-            </div>
-          </div>
-        </div>
+    <!-- Contato -->
+    <section id="contato" class="contact">
+      <div class="wrap">
+        <p class="eyebrow">Contato</p>
+        <h2>Tem um processo que dá para automatizar ou um sistema para integrar?</h2>
+        <p class="lead">Me conte como ele funciona hoje. Respondo por e-mail ou WhatsApp.</p>
+        <a class="contact__mail" href="mailto:deywid2005@gmail.com">deywid2005@gmail.com</a>
+        <ul class="contact__links">
+          <li><a href="https://wa.me/5531998984437" target="_blank" rel="noopener"><span>WhatsApp</span>(31) 99898-4437</a></li>
+          <li><a href="https://www.linkedin.com/in/deywid-souza" target="_blank" rel="noopener"><span>LinkedIn</span>in/deywid-souza</a></li>
+          <li><a href="https://github.com/Deywid12" target="_blank" rel="noopener"><span>GitHub</span>Deywid12</a></li>
+        </ul>
       </div>
     </section>
-          </div>
-        </div>
-      </div> <!-- grid -->
-    </div>
-  </section>
+  </main>
 
-  <!-- Contatos -->
-  <section id="contact" class="py-20 gradient-bg text-white">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="text-center mb-16 fade-in">
-        <h2 class="text-4xl font-bold mb-4">Vamos Trabalhar Juntos?</h2>
-        <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
-        <p class="text-xl opacity-90 max-w-2xl mx-auto">
-          Estou sempre aberta a novos desafios e oportunidades. Entre em contato para discutir seu próximo projeto!
-        </p>
-      </div>
-
-      <div class="max-w-3xl mx-auto">
-        <div class="fade-in">
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="flex items-center p-6 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/15 transition-colors">
-              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-6">
-                <span class="text-2xl">📧</span>
-              </div>
-              <div>
-                <div class="font-semibold text-lg mb-1">Email</div>
-                <a href="mailto:deywid2005@gmail.com" class="text-blue-300 hover:text-blue-200 transition-colors">
-                  deywid2005@gmail.com
-                </a>
-              </div>
-            </div>
-
-            <div class="flex items-center p-6 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/15 transition-colors">
-              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-6">
-                <span class="text-2xl">💼</span>
-              </div>
-              <div>
-                <div class="font-semibold text-lg mb-1">LinkedIn</div>
-                <a href="https://www.linkedin.com/in/deywid-souza" target="_blank" class="text-blue-300 hover:text-blue-200 transition-colors">
-                  linkedin.com/in/deywid-souza
-                </a>
-              </div>
-            </div>
-
-            <div class="flex items-center p-6 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/15 transition-colors">
-              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-6">
-                <span class="text-2xl">🐙</span>
-              </div>
-              <div>
-                <div class="font-semibold text-lg mb-1">GitHub</div>
-                <a href="https://github.com/Deywid12" target="_blank" class="text-blue-300 hover:text-blue-200 transition-colors">
-                  github.com/Deywid12
-                </a>
-              </div>
-            </div>
-
-            <div class="flex items-center p-6 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/15 transition-colors">
-              <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-6">
-                <span class="text-2xl">📱</span>
-              </div>
-              <div>
-                <div class="font-semibold text-lg mb-1">WhatsApp</div>
-                <a href="https://wa.me/5531998984437" target="_blank" class="text-blue-300 hover:text-blue-200 transition-colors">
-                  +55 (31) 998984437
-                </a>
-              </div>
-            </div>
-          </div> <!-- grid -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- barra -->
-  <footer class="bg-slate-950 text-white py-8 border-t border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <div class="mb-4">
-        <h3 class="text-2xl font-bold mb-2">Deywid Souza</h3>
-        <p class="text-slate-400">Desenvolvedor Full-Stack e Analista de Dados</p>
-      </div>
-
-      <div class="flex justify-center space-x-6 mb-6">
-        <a href="https://www.linkedin.com/in/deywid-souza" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors">
-          <span class="text-2xl">💼</span>
-        </a>
-        <a href="https://github.com/Deywid12" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors">
-          <span class="text-2xl">🐙</span>
-        </a>
-        <a href="mailto:deywid2005@gmail.com" class="text-slate-400 hover:text-blue-400 transition-colors">
-          <span class="text-2xl">📧</span>
-        </a>
-      </div>
-
-      <div class="border-t border-slate-800 pt-6">
-        <p class="text-slate-400">&copy; 2024 Deywid Souza. Todos os direitos reservados.</p>
-      </div>
-    </div>
+  <footer class="footer wrap">
+    <span>© <span id="ano">2026</span> Deywid Luiz Souza Tavares</span>
+    <a href="#topo">Voltar ao topo ↑</a>
   </footer>
 
-  <!-- JS customizado -->
   <script src="./script.js"></script>
 </body>
 </html>
-

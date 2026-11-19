@@ -1,44 +1,25 @@
-# 🌐 Portfólio - Deywid Souza
+# Portfólio · Deywid Souza
 
-Este é o repositório do meu **portfólio pessoal**, desenvolvido com **HTML**, **CSS (TailwindCSS)** e **JavaScript**.  
-O objetivo é apresentar meus projetos, habilidades e formas de contato de maneira prática e moderna.
+Site pessoal com meus serviços, experiência, projetos e contato.
 
----
+**Online:** https://deywid12.github.io/Portifolio-Deywid/
 
-## 🚀 Acesse Online
-🔗 [Clique aqui para acessar meu portfólio](https://deywid12.github.io/Portifolio-Deywid/)  
+## Estrutura
 
----
+```
+index.html   conteúdo da página
+styles.css   estilos (tema claro e escuro automáticos)
+script.js    menu no celular, ano no rodapé e entrada das seções
+img/         foto
+```
 
-## 📌 Sobre o projeto
-O site conta com as seguintes seções:
-- **Início** → Apresentação e animação de digitação  
-- **Sobre mim** → Minha trajetória e experiência  
-- **Projetos** → Portfólio com alguns dos meus trabalhos mais relevantes  
-- **Habilidades** → Tecnologias, especialidades e certificações  
-- **Contato** → Links para Email, LinkedIn, GitHub e WhatsApp  
+HTML, CSS e JavaScript puros, sem build e sem dependências. As fontes vêm do Google Fonts.
+O deploy é feito pelo GitHub Pages a partir da branch `main`.
 
----
+## Rodar local
 
-## 🛠️ Tecnologias Utilizadas
-- **HTML5**
-- **CSS3 / TailwindCSS**
-- **JavaScript (ES6+)**
-- **Chart.js** (suporte para gráficos dinâmicos)
-- **GitHub Pages** (deploy)
-
----
-## 📊 Linguagens Mais Usadas
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=deywid12&layout=compact&theme=radical)
-
-## 📂 Estrutura de Arquivos
 ```bash
-portfolio/
-│-- index.html   # Página principal
-│-- styles.css   # Estilos customizados
-│-- script.js    # Funcionalidades JS
-│-- LICENSE      # Licença do projeto
-│-- README.md    # Documentação
+python -m http.server 8000
+```
 
-
+Depois abra http://localhost:8000.

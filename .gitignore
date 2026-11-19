@@ -11,3 +11,6 @@ Thumbs.db
 # Build temporário
 dist/
 build/
+
+# Capturas do Playwright
+.playwright-mcp/
